@@ -1,1 +1,119 @@
-Abed
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>FCC Project 2</title>
+</head>
+
+<body id="main">
+
+    <header>
+    <h1 id="title">Abed Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <div id="info">
+    <form action="https://www.lemorau.com/wp-content/uploads/2019/06/thankyou-1030x687.jpg" target="_blank" id="survey-form" method="GET">
+
+    <div id="personal-info">
+
+    <label for="name" id="name-label">Name<br>
+    <input type="text" name="input-text" id="name" placeholder="Enter your name" required="">
+    </label><br>
+
+    <label for="email" id="email-label">Email<br>
+    <input type="email" name="input-text" id="email" placeholder="Enter your Email" required="">
+    </label><br>
+
+    <label for="number" id="number-label">Age<br>
+    <input type="number" name ="input-text" id="number"  placeholder="Age" min="10" max="99" required="">
+    </label>
+
+    </div>
+
+    <p>Which option best describes your current role?</p>
+    <select name="role" id="dropdown" class="form-control-1" required="">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="Student">Student</option>
+        <option value="Full Time Job">Full Time Job</option>
+        <option value="Full Time Learner">Full Time Learner</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+    </select> 
+
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+
+    <div>
+    <input type="radio" name="input-radio" id="def" class="input-radio" value="definitly" checked>
+    <label for="def">Definitly</label>
+    </div>
+
+    <div>
+    <input type="radio" name="input-radio" id="maybe" class="input-radio" value="maybe">
+    <label for="maybe">Maybe</label>
+    </div>
+
+    <div>
+    <input type="radio" name="input-radio" id="ns" class="input-radio" value="not-sure">
+    <label for="ns">Not sure</label>
+    </div>
+    
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <select name="feature" id="dropdown" class="form-control-2" required="">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="Student">Challenges</option>
+        <option value="Full Time Job">Projects</option>
+        <option value="Full Time Learner">Community</option>
+        <option value="Prefer not to say">Open source</option>
+    </select> 
+
+    <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+
+    <div id="checkbox-div">
+    <input type="checkbox" name="input-checkbox" id="checkbox1" class="input-checkbox" value="front-end-projects">
+    <label for="checkbox1">Front-end Projects</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox2" class="input-checkbox" value="back-end-projects">
+    <label for="checkbox2">Back-end Projects</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox3" class="input-checkbox" value="data-visualization">
+    <label for="checkbox3">Data Visualization</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox4" class="input-checkbox" value="challenges">
+    <label for="checkbox4">Challenges</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox5" class="input-checkbox" value="open-source-community">
+    <label for="checkbox5">Open Source Community</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox6" class="input-checkbox" value="gitter-help-rooms">
+    <label for="checkbox6">Gitter help rooms</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox7" class="input-checkbox" value="videos">
+    <label for="checkbox7">Videos</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox8" class="input-checkbox" value="city-meetups">
+    <label for="checkbox8">City Meetups</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox9" class="input-checkbox" value="wiki">
+    <label for="checkbox9">Wiki</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox10" class="input-checkbox" value="forum">
+    <label for="checkbox10">Forum</label></br>
+
+    <input type="checkbox" name="input-checkbox" id="checkbox11" class="input-checkbox" value="additional-courses">
+    <label for="checkbox11">Additional Courses</label></br>
+    </div>
+
+    <p>Any comments or suggestions?</p>
+    <textarea name="comment" id="comments" class="input-textarea" cols="55" rows="5" placeholder="Enter your comment here..."></textarea></br>
+
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+    
+</form>
+</div>
+</body>
+</html>

@@ -66,8 +66,7 @@ header {
     font-size: large;
     color: rgb(104, 23, 23);
     text-align: center;
-    background-color: rgb(131, 163, 163);
-    opacity: 95%;
+    background-color: rgba(194, 194, 194, 0.5);
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     border-radius: 10%;
@@ -78,9 +77,10 @@ header {
 
 
 #description {
-    font-weight: 100;
-    font-size: large;
-    color: rgb(41, 46, 46);
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(26, 29, 29);
+    font-family: monospace;
 }
 
 .input-checkbox {

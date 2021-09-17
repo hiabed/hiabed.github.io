@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1800px, 1fr));
     font-family: 'Poppins', sans-serif;
     font-size: large;
     background-image: url('https://images.indianexpress.com/2021/05/Home-Desktop-Work-From-Home.jpg');

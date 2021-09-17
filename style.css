@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    max-width: auto;
 }
 
 #name {
@@ -63,21 +64,23 @@ span {
 }
 header {
     font-size: large;
-    color: rgb(139, 201, 201);
+    color: rgb(104, 23, 23);
     text-align: center;
-    background-color: rgb(109, 116, 116);
+    background-color: rgb(131, 163, 163);
     opacity: 95%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     border-radius: 10%;
-    border: 5px solid rgb(204, 204, 197);
+    border: 5px solid rgba(0, 0, 0, 0.767);
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 
 #description {
     font-weight: 100;
     font-size: large;
-    color: rgb(139, 201, 201);
+    color: rgb(41, 46, 46);
 }
 
 .input-checkbox {
@@ -93,13 +96,14 @@ header {
 }
 
 #survey-form {
-    background-color: grey;
+    background-color: rgb(184, 184, 184);
     opacity: 95%;
     margin-left: 30%;
     margin-right: 30%;
     padding: 2% 5% 2% 5%;
     border-radius: 2%;
     margin-top: 2%;
+    border: 5px solid rgb(17, 29, 29);
 }
 
 .input-radio {

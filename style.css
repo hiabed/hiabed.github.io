@@ -5,7 +5,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    max-width: auto;
+    background-color: indigo;
+    max-width: auto;                                     
 }
 
 #name {
@@ -70,9 +71,10 @@ header {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     border-radius: 10%;
-    border: 5px solid rgba(0, 0, 0, 0.767);
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 2%;
+    border: 5px solid rgba(0, 0, 0, 0.767);
 }
 
 #description {

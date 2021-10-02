@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    min-height: 75px;
+    padding: 0 20px;
+    background-color: #eee;
+}
+
+nav {
+    font-weight: 400;
+}
+
+nav ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    width: 60vw;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    margin-left: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+#features {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#email {
+    background-color: rgb(231, 218, 218);
+    font-size: 15px;
+    width: 50%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+}
+
+#submit {
+    color: blue;
+    font-size: 15px;
+    background-color: orangered;
+    margin-bottom: 10%;
+    padding: 0.5% 2.5% 0.5% 2.5%;
+    font-size: large
+}
+
+.premium {
+    font-size: 20px;
+    color: indigo;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    line-height: 300%;
+    text-align: center;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50%;
+}
+
+.first-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    border: 2px solid gray;
+    width: 25%;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.second-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid gray;
+    width: 25%;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.third-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid gray;
+    width: 25%;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+button {
+    padding: 2% 10% 2% 10%;
+    font-size: 20px;
+    background-color: orange;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.header {
+    color: rgb(189, 102, 102);
+    font-size: 22px;
+    border: 5px solid gainsboro;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+}
+
+.price {
+    color: rgb(253, 146, 146);
+    text-align: center;
+
+}
+
+
+
+/*embedded youtube video*/
+
+#video-container {
+    position: relative;
+    width: 60%;
+    padding-bottom: 76.25%; 
+    height: 0;
+    margin-left: 20%;
+    margin-top: 10%;
+    text-align: center;
+
+  }
+  
+#video-container #video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+.p {
+    margin-left: 2.5%;
+}
+
+.t {
+    margin-left: 2.5%;
+}
+
+.c {
+    margin-left: 2.5%;
+}
+  
+#footer {
+    background-color: gray;
+    color: rgb(36, 35, 35);
+    text-align: right;
+
+}
+
+footer {
+    background-color: gray;
+    text-align: right;
+}
+
+@media all and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        top: 10px;
+        min-height: 75px;
+        padding: 0 20px;
+        background-color: #eee;
+        width: 100%;
+        line-height: 1.6;
+
+    }
+}

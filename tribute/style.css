@@ -1,0 +1,36 @@
+html {
+    background-color: white;
+    margin: 5px;
+}
+body {
+    background-color: rgb(231, 231, 231);
+    font-family: sans-serif;
+}
+
+ul {
+    padding-left: 30%;
+}
+
+div#cite {
+    padding-left: 30%;
+}
+
+h3 {
+    padding-left: 20%;
+}
+
+#top {
+    text-align: center;
+    padding: 20px;
+}
+
+#img-div {
+    text-align: center; 
+    background-color: white;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}

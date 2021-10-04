@@ -2,8 +2,21 @@ body {
     font-family: sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
 
+#welcome-section {
+    height: fit-content;
+}
 
+img {
+    width: 40%;
+}
+
+#navbar {
+    
+}
 
 
 @media (max-width: 500px) {

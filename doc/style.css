@@ -13,13 +13,25 @@
 #main-doc {
     border: 2px solid grey;
     padding-left: 2%;
+    padding-right: 1%;
     margin-left: 2%;
+    background-color: rgb(231, 231, 231);
+    font-size: large;
 }
 
 body {
     display: flex;
     background-color: rgb(233, 233, 233);
+}
 
+code {
+    background-color: grey;
+    display: block;
+    padding: 1%;
+}
+
+code:hover {
+    background-color: rgb(179, 185, 179);
 }
 
 @media all and (max-width: 500px) {

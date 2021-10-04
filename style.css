@@ -16,11 +16,14 @@ ul {
     font-size: 20px;
 }
 
+#viewport {
+    background-color: rgb(179, 176, 176);
+}
+
 #welcome-section {
     border: 1px solid grey;
-    height: 100%;
-    background-color: rgb(179, 176, 176);
-    padding: 17.5% 0% 17.5% 0%;
+    height: 100vh;
+    font-size: 50px;
     text-align: center;
 }
 

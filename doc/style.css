@@ -1,8 +1,15 @@
 #ul {
-    font-size: larger;
+    list-style-type: none;
+    font-size: large;
+    border: 1px solid grey;
+}
+
+#li {
+    border: 1px solid grey;
 }
 
 #navbar {
+    display: inline;
     border: 2px solid grey;
     padding-left: 2%;
     padding-right: 2%;
@@ -15,13 +22,16 @@
     padding-left: 2%;
     padding-right: 1%;
     margin-left: 2%;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(219, 219, 219);
     font-size: large;
 }
 
 body {
     display: flex;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(219, 219, 219);
+    line-height: 1.6;
+    font-family: sans-serif;
+
 }
 
 code {
@@ -34,12 +44,13 @@ code:hover {
     background-color: rgb(179, 185, 179);
 }
 
-@media all and (max-width: 500px) {
+@media (max-width: 600px) {
     body {
         display: flex;
         flex-direction: column;
         background-color: rgb(233, 233, 233);
-    
+        line-height: 1.6;
+        font-family: sans-serif;
     }
     #navbar {
         border: 2px solid grey;

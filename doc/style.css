@@ -6,7 +6,7 @@
     border: 2px solid grey;
     padding-left: 2%;
     padding-right: 2%;
-    border-radius: 2.5%;
+    border-radius: 1%;
     background-color: rgb(211, 211, 211);
 }
 
@@ -22,11 +22,17 @@ body {
 
 }
 
-@media all and {500px} {
+@media all and (max-width: 500px) {
     body {
         display: flex;
         flex-direction: column;
         background-color: rgb(233, 233, 233);
     
+    }
+    #navbar {
+        border: 2px solid grey;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 2%;
     }
 }

@@ -47,10 +47,4 @@ code:hover {
         padding-right: 2%;
         margin-left: 2%;
     }
-    code {
-        background-color: grey;
-        display: block;
-        padding: 1%;
-    }
-    
 }

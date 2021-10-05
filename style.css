@@ -3,21 +3,16 @@ body {
     background-color: rgb(179, 176, 176);
 }
 
+
 ul {
-    list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+    list-style-type: none;
     border: 3px solid rgb(199, 223, 223);
     background-color: rgb(199, 223, 223);
-    padding-left: 70%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 2%;
-    font-size: 20px;
-}
-
-#viewport {
-    background-color: rgb(179, 176, 176);
+    text-align: right;
+    padding: 1% 1% 1% 2%;
+    font-size: 25px;
 }
 
 #welcome-section {

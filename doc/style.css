@@ -8,17 +8,14 @@
 #ul {
     list-style-type: none;
     font-size: large;
-    border: 1px solid grey;
-}
-
-#li {
-    border: 1px solid grey;
+    text-decoration: wavy;
 }
 
 #navbar {
     position: fixed;
     height: 100vh;
     width: auto;
+    border: 2px solid grey;
     padding-left: 1%;
     padding-right: 1%;
     border-radius: 1%;

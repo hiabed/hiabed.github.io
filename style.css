@@ -115,7 +115,7 @@ footer {
     text-align: center;
 }
 
-#my-contact {
+p {
     font-style: italic;
     margin-bottom: 3%;
     font-size: 20px;
@@ -141,13 +141,12 @@ div {
     }
 }
 
-
 @media (max-width: 500px) {
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        
+    div {
+        font-style: italic;
+        margin-bottom: 3%;
+        font-size: 20px;
+        color: honeydew;
     }
 }
 

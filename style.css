@@ -142,10 +142,8 @@ div {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     ul {
-        display: flex;
-        flex-direction: row;
         text-align: center;
     }
 }

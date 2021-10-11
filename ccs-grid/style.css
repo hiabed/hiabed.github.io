@@ -11,20 +11,18 @@ a {
 ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ". home work contact";
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.home {
+li.home {
     grid-area: home;
 }
 
-.work {
+li.work {
     grid-area: work;
 }
 
-.contact {
+li.contact {
     grid-area: contact;
 }
 
@@ -41,12 +39,12 @@ body {
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.6fr 1fr 1fr 1fr;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.5fr 1.4fr 1fr 0.6fr;
-    grid-template-areas: ". nav nav nav" 
-                         "sidebar main main main"
-                         "sidebar content1 content2 content3"
-                         "sidebar footer footer footer";
+    grid-template-areas: ". nav nav nav ." 
+                         "sidebar main main main ."
+                         "sidebar content1 content2 content3 ."
+                         "sidebar footer footer footer .";
     grid-gap: 0.2rem;
 }
 

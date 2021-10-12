@@ -34,13 +34,14 @@ body {
     font-family: "Inter", sans-serif;
     color: rgb(38, 38, 39);
     font-size: 20px;
+    background: wheat;
 }
 
 .container {
     display: grid;
     height: 1200px;
     grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
-    grid-template-rows: 0.3fr 1.4fr 1fr 1fr 0.6fr;
+    grid-template-rows: 0.4fr 1.4fr 1fr 1fr 0.6fr;
     grid-template-areas: ". nav nav nav ." 
                          "sidebar main main main right"
                          ". content1 content2 content3 ."
@@ -63,23 +64,23 @@ body {
 .fa:hover {
     opacity: 0.95;
     width: 5.5vw;
+    background: grey;
 }
 
 .fa-home {
-    color: black;
-    background: rgb(241, 179, 241);
-    
+    color: whitesmoke;
+    background: rgb(209, 174, 209);    
 }
 
 .fa-tasks {
     color: whitesmoke;
-    background: rgb(241, 179, 241);
+    background: rgb(209, 174, 209);
 
 }
 
 .fa-id-card {
     color: whitesmoke;
-    background: rgb(241, 179, 241);
+    background: rgb(209, 174, 209);
 
 }
 
@@ -91,6 +92,7 @@ body {
   .fa-twitter {
     background: #55ACEE;
     color: white;
+
   }
   
   .fa-google {
@@ -115,7 +117,7 @@ body {
 }
 
 nav {
-    background: rgb(255, 147, 147);
+    background: greenyellow;
     grid-area: nav;
     border-radius: 10px;
 }
@@ -173,7 +175,7 @@ main {
 }
 
 footer {
-    background: rgb(219, 182, 255);
+    background: rgb(148, 144, 153);
     grid-area: footer;
     border-radius: 10px;
 }

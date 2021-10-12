@@ -63,6 +63,23 @@ body {
 .fa:hover {
     opacity: 0.95;
     width: 5.5vw;
+}
+
+.fa-home {
+    color: black;
+    background: rgb(241, 179, 241);
+    
+}
+
+.fa-tasks {
+    color: whitesmoke;
+    background: rgb(241, 179, 241);
+
+}
+
+.fa-id-card {
+    color: whitesmoke;
+    background: rgb(241, 179, 241);
 
 }
 

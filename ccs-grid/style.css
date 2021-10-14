@@ -128,7 +128,7 @@ nav {
 }
 
 main {
-    background: rgb(225, 86, 230);
+    background: rgb(230, 108, 235);
     grid-area: main;
     border-radius: 10px;
     height: 100%;
@@ -152,36 +152,41 @@ main {
 #content1:hover {
     opacity: 0.8;
     padding: 2%;
-    border-style: outset;
+    border-style: solid;
 }
 
 #content2:hover {
     opacity: 0.8;
     padding: 2%;
+    border-style: solid;
 }
 
 
 #content3:hover {
     opacity: 0.8;
     padding: 2%;
+    border-style: solid;
 }
 
 
 #content4:hover {
     opacity: 0.8;
     padding: 2%;
+    border-style: solid;
 }
 
 
 #content5:hover {
     opacity: 0.8;
     padding: 2%;
+    border-style: solid;
 }
 
 
 #content6:hover {
     opacity: 0.8;
     padding: 2%;
+    border-style: solid;
 }
 
 

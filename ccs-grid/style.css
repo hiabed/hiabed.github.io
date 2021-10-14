@@ -12,10 +12,12 @@ ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 li.home {
     grid-area: home;
+    padding: 2%;
 }
 
 li.work {
@@ -112,7 +114,7 @@ body {
     background: rgb(245, 195, 177);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.24fr 0.24fr 0.24fr 0.24fr;
 }
 
@@ -123,10 +125,6 @@ nav {
     margin: 0 30% 0 15%;
     position: fixed;
     padding: 1% 31% 1% 31%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "home work contact";
 }
 
 main {

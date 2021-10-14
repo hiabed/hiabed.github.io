@@ -149,6 +149,42 @@ main {
     border-radius: 10px;
 }
 
+#content1:hover {
+    opacity: 0.8;
+    padding: 2%;
+    border-style: outset;
+}
+
+#content2:hover {
+    opacity: 0.8;
+    padding: 2%;
+}
+
+
+#content3:hover {
+    opacity: 0.8;
+    padding: 2%;
+}
+
+
+#content4:hover {
+    opacity: 0.8;
+    padding: 2%;
+}
+
+
+#content5:hover {
+    opacity: 0.8;
+    padding: 2%;
+}
+
+
+#content6:hover {
+    opacity: 0.8;
+    padding: 2%;
+}
+
+
 #content2 {
     background: rgb(255, 186, 253);
     grid-area: content2;

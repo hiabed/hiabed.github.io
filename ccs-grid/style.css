@@ -40,9 +40,9 @@ body {
 
 .container {
     display: grid;
-    height: 1400px;
+    height: 200vh;
     grid-template-columns: 0.3fr 0.5fr 0.5fr 0.5fr 0.15fr;
-    grid-template-rows: 0.45fr 3fr 1fr 1fr 0.6fr;
+    grid-template-rows: 0.4fr 3fr 1fr 1fr 0.6fr;
     grid-template-areas: ". nav nav nav ." 
                          "sidebar main main main right"
                          ". content1 content2 content3 ."

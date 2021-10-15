@@ -32,18 +32,17 @@ body {
     background: rgb(243, 228, 217);
     text-align: center;
     text-transform: capitalize;
-    font-weight: 1000;
     font-family: "Inter", sans-serif;
     color: rgb(38, 38, 39);
     font-size: 20px;
-    background: grey;
+    background: rgb(179, 168, 168);
 }
 
 .container {
     display: grid;
-    height: 1200px;
+    height: 1400px;
     grid-template-columns: 0.3fr 0.5fr 0.5fr 0.5fr 0.15fr;
-    grid-template-rows: 0.54fr 3fr 1fr 1fr 0.6fr;
+    grid-template-rows: 0.45fr 3fr 1fr 1fr 0.6fr;
     grid-template-areas: ". nav nav nav ." 
                          "sidebar main main main right"
                          ". content1 content2 content3 ."
@@ -116,15 +115,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.24fr 0.24fr 0.24fr 0.24fr;
+    width: 100%;
 }
 
 nav {
     background: rgb(245, 195, 177);
     grid-area: nav;
     border-radius: 10px;
-    margin: 0 30% 0 15%;
     position: fixed;
     padding: 1% 31% 1% 31%;
+    width: 100%;
+    border: 2px black solid;
 }
 
 main {
@@ -141,6 +142,10 @@ main {
     background: rgb(245, 195, 177);
     grid-area: sidebar;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bolder;
 }
 
 #content1 {

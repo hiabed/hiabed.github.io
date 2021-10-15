@@ -8,7 +8,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: grey;
+    background-color: rgb(131, 99, 99);
     line-height: 1.6;
 }
 
@@ -99,7 +99,7 @@ img {
     line-height: 5;
     text-align: center;
     text-decoration: rgb(241, 241, 241) underline;
-    background-color: grey;
+    background-color: rgb(131, 99, 99);
     color: rgb(255, 250, 223);
 }
 
@@ -139,6 +139,8 @@ div {
     padding: 1%;
     font-size: 40px;
     margin-bottom: 2%;
+    border: solid black 3px;
+
 }
 
 .fa {
@@ -151,22 +153,30 @@ div {
     border-radius: 50%;
 }
 
-  .fa:hover {
+.fa-github:hover {
     opacity: 0.80;
-    width: 5.5vw;
-    background: grey;
+    background: rgb(78, 75, 75);
+}
+
+.fa-free-code-camp:hover {
+    opacity: 0.80;
+    background: rgb(78, 75, 75);
 }
 
 .fa-github {
     background: black;
     color: white;
     border-radius: 50%;
+    width: 6vw;
+    padding: 10%;
 }
   
 .fa-free-code-camp {
     background: black;
     color: white;
     border-radius: 50%;
+    width: 6vw;
+    padding: 6%;
 }
 
 

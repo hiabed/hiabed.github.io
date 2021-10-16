@@ -36,7 +36,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(197, 218, 218);
     font-size: 25px;
     box-shadow: 0 2px 0 rgba(226, 137, 137, 0.4);
@@ -44,7 +44,7 @@ a {
 }
 
 #hey {
-    font-family: 'Raleway', sans-serif;
+    font-family: ZCOOL KuaiLe;
     font-weight: 700;
     color: rgb(236, 255, 199);
     text-align: center;

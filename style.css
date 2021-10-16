@@ -82,18 +82,24 @@ a {
     grid-row-gap: 20px;
 }
 
+img {
+    width: 55vw;
+    height: 65vh;
+    padding: auto;
+    border-radius: 10px;
+}
+
 .project-tile {
-    border: 2px solid whitesmoke;
+    border: 3px inset whitesmoke;
     width: 60%;
+    height: 73vh;
     margin-left: 20%;
     border-radius: 10px;
 }
 
-img:hover {
+.project-tile:hover {
     opacity: 0.8;
-    padding: 2%;
-    border: 3px green solid;
-    width: 70%;
+    border: 3px grey outset;
 }
 
 /*#content2:hover {
@@ -115,6 +121,11 @@ img:hover {
     text-decoration: rgb(241, 241, 241) underline;
     background-color: rgb(131, 99, 99);
     color: rgb(255, 250, 223);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
 }
 
 h2 {

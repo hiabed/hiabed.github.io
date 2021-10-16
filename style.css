@@ -77,8 +77,6 @@ a {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
-    grid-template-areas: "image1 image2"
-                         "image3 image4";
     grid-row-gap: 20px;
 }
 
@@ -199,25 +197,89 @@ div {
     padding: 6%;
 }
 
+@media (max-width: 1000px) {
+    body {
+        font-size: small;
+    }
+    .project-tile {
+        border: 3px inset whitesmoke;
+        width: 70%;
+        height: 73vh;
+        margin-left: 20%;
+        border-radius: 10px;
+    }
 
+    .fa-github {
+        width: 7vw;
+        padding: 5%;
+    }
+      
+    .fa-free-code-camp {
+        width: 7vw;
+        padding: 3%;
+    }
+    
+
+}
 
 @media (max-width: 700px) {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(1, minmax(320px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+
+.fa-github {
+    width: 7vw;
+    padding: 5%;
+    font-size: large;
+}
+  
+.fa-free-code-camp {
+    width: 7vw;
+    padding: 3%;
+    font-size: large;
+}
+
+div {
+    font-size: 20px;
+}
+
+#work {
+    font-size: 30px;
+}
+
+footer {
+    margin-top: 160%;
+}
+}
+
+@media (max-width: 600px) {
+
+    footer {
+        margin-top: 170%;
     }
 }
 
-@media (max-width: 500px) {
-    div {
-        font-style: italic;
-        margin-bottom: 3%;
-        font-size: 20px;
-        color: honeydew;
-    }
-    #work {
-        font-size: 30px;
+@media (max-width: 550px) {
+
+    footer {
+        margin-top: 180%;
     }
 }
 
+@media (max-width: 530px) {
+
+    footer {
+        margin-top: 190%;
+    }
+}
+
+@media (max-width: 530px) {
+
+    footer {
+        margin-top: 200%;
+    }
+}

@@ -60,7 +60,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #000;
     background-image: linear-gradient(62deg, #6189b1 0%, #5b4d69 100%);
@@ -82,21 +82,32 @@ a {
     grid-row-gap: 20px;
 }
 
-img {
-    width: 55vw;
-    height: 65vh;
-    padding: auto;
-    border-radius: 10px;
-
-}
-
 .project-tile {
     border: 2px solid whitesmoke;
     width: 60%;
     margin-left: 20%;
     border-radius: 10px;
-    margin-bottom: 0;
 }
+
+img:hover {
+    opacity: 0.8;
+    padding: 2%;
+    border: 3px green solid;
+    width: 70%;
+}
+
+/*#content2:hover {
+    opacity: 0.8;
+    padding: 2%;
+    border-style: solid;
+}
+
+
+#content3:hover {
+    opacity: 0.8;
+    padding: 2%;
+    border-style: solid;
+}*/
 
 #some {
     line-height: 5;
@@ -104,11 +115,6 @@ img {
     text-decoration: rgb(241, 241, 241) underline;
     background-color: rgb(131, 99, 99);
     color: rgb(255, 250, 223);
-}
-
-img {
-    width: 100%;
-    object-fit: cover;
 }
 
 h2 {

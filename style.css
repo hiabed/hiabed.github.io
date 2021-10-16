@@ -282,3 +282,10 @@ footer {
         margin-top: 200%;
     }
 }
+
+@media (max-width: 500px) {
+
+    footer {
+        margin-top: 210%;
+    }
+}

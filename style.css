@@ -373,3 +373,17 @@ footer {
     }
     
 }
+
+@media (max-width: 310px) {
+
+    footer {
+        margin-top: 320%;
+    }
+}
+
+@media (max-width: 300px) {
+
+    footer {
+        margin-top: 330%;
+    }
+}

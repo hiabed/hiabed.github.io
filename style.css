@@ -16,6 +16,11 @@ li a {
     padding: 20px;
 }
 
+li a:hover {
+    background: grey;
+    border-radius: 2%;
+}
+
 #navbar ul {
     display: flex;
     margin-right: 4rem;

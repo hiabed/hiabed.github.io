@@ -355,6 +355,11 @@ footer {
     footer {
         margin-top: 300%;
     }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media (max-width: 320px) {
 

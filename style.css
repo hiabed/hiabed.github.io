@@ -289,3 +289,11 @@ footer {
         margin-top: 210%;
     }
 }
+
+@media (max-width: 450px) {
+
+    footer {
+        margin-top: 220%;
+    }
+}
+

@@ -9,6 +9,7 @@ body {
     font-family: sans-serif;
     background-color: rgb(131, 99, 99);
     line-height: 1.6;
+    background: linear-gradient(orange, rgb(255, 169, 10));
 }
 
 li a {
@@ -49,7 +50,7 @@ a {
 }
 
 #hey {
-    font-family: ZCOOL KuaiLe;
+    font-family: 'ZCOOL KuaiLe', sans-serif;
     font-weight: 700;
     color: rgb(236, 255, 199);
     text-align: center;
@@ -66,8 +67,7 @@ a {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #6189b1 0%, #5b4d69 100%);
+    background: linear-gradient(62deg, #6189b1 0%, #5b4d69 100%);
     font-size: 40px;
 }
 
@@ -82,6 +82,13 @@ a {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
     grid-row-gap: 20px;
+    background: linear-gradient(#5b4d69, orange);
+}
+
+.project-tile:hover {
+    transform: rotate(5deg);
+    opacity: 0.9;
+    border: 3px grey outset;
 }
 
 img {
@@ -89,6 +96,8 @@ img {
     height: 65vh;
     padding: auto;
     border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .project-tile {
@@ -97,11 +106,7 @@ img {
     height: 73vh;
     margin-left: 20%;
     border-radius: 10px;
-}
 
-.project-tile:hover {
-    opacity: 0.8;
-    border: 3px grey outset;
 }
 
 /*#content2:hover {
@@ -120,14 +125,10 @@ img {
 #some {
     line-height: 5;
     text-align: center;
-    text-decoration: rgb(241, 241, 241) underline;
     background-color: rgb(131, 99, 99);
     color: rgb(255, 250, 223);
-}
+    background: linear-gradient(#6189b1 0%,#5b4d69 100%);
 
-img {
-    width: 100%;
-    object-fit: cover;
 }
 
 h2 {
@@ -178,11 +179,17 @@ div {
 .fa-github:hover {
     opacity: 0.80;
     background: rgb(78, 75, 75);
+    transform: rotate(30deg);
 }
 
 .fa-free-code-camp:hover {
     opacity: 0.80;
     background: rgb(78, 75, 75);
+    transform: rotate(30deg);
+}
+
+#profile-link:hover {
+    color: rgb(244, 255, 227);
 }
 
 .fa-github {

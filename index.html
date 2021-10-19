@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/64af471d27.js" crossorigin="anonymous"></script>
     <title>portfolio</title>
     <meta name="description" content="My freeCodeCamp Portfolio">
@@ -61,7 +60,28 @@
                 <a id="profile-link" class="profile-link" href="https://www.freecodecamp.org/hiabed" target="_blank"><i class="fab fab fa-free-code-camp"></i>freeCodeCamp</a>
             </div>
         </footer>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button> 
     </main>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 </html>

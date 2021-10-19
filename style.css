@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     background-color: rgb(131, 99, 99);
     line-height: 1.6;
-    background: linear-gradient(orange, rgb(255, 169, 10));
+    background: rgb(145, 94, 0);
 }
 
 li a {
@@ -82,7 +82,7 @@ a {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
     grid-row-gap: 20px;
-    background: linear-gradient(#5b4d69, orange);
+    background: linear-gradient(#5b4d69, rgb(145, 94, 0));
 }
 
 .project-tile:hover {
@@ -128,7 +128,7 @@ img {
     background-color: rgb(131, 99, 99);
     color: rgb(255, 250, 223);
     background: linear-gradient(#6189b1 0%,#5b4d69 100%);
-
+    width: 100vw;
 }
 
 h2 {
@@ -146,6 +146,8 @@ h2 {
 
 footer {
     text-align: center;
+    background: linear-gradient(rgb(145, 94, 0) ,rgb(226, 200, 153));
+    width: 100vw;
 }
 
 p {
@@ -161,7 +163,6 @@ div {
     align-items: center;
     padding: 1%;
     font-size: 40px;
-    margin-bottom: 2%;
     border: solid black 3px;
     border-radius: 10px;
 }

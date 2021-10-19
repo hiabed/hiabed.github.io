@@ -148,6 +148,7 @@ footer {
     text-align: center;
     background: linear-gradient(rgb(145, 94, 0) ,rgb(226, 200, 153));
     width: 100vw;
+    padding-bottom: 3%;
 }
 
 p {

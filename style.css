@@ -210,6 +210,20 @@ div {
     padding: 6%;
 }
 
+.fa-envelope {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    width: 6vw;
+    padding: 11%;
+}
+
+.fa-envelope:hover {
+    opacity: 0.80;
+    background: rgb(78, 75, 75);
+    transform: rotate(30deg);
+}
+
 #myBtn {
     display: none;
     position: fixed;

@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     background-color: rgb(131, 99, 99);
     line-height: 1.6;
-    background: rgb(145, 94, 0);
+    background: linear-gradient(#92899c, #5b4d69)
 }
 
 li a {
@@ -82,7 +82,7 @@ a {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
     grid-row-gap: 20px;
-    background: linear-gradient(#5b4d69, rgb(145, 94, 0));
+    background: linear-gradient(#5b4d69, #b8adc4);
 }
 
 .project-tile:hover {
@@ -106,7 +106,6 @@ img {
     height: 73vh;
     margin-left: 20%;
     border-radius: 10px;
-
 }
 
 /*#content2:hover {

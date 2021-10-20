@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     background-color: rgb(131, 99, 99);
     line-height: 1.6;
-    background: linear-gradient(#92899c, #5b4d69)
+    background: #b8adc4
 }
 
 li a {
@@ -145,7 +145,7 @@ h2 {
 
 footer {
     text-align: center;
-    background: linear-gradient(rgb(145, 94, 0) ,rgb(226, 200, 153));
+    background: linear-gradient(#b8adc4 ,#dcd5e4);
     width: 100vw;
     height: 50vh;
     padding-bottom: 3%;

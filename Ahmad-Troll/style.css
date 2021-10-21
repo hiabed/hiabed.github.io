@@ -19,21 +19,16 @@ table {
 
 td {
     border: 3px rgb(107, 11, 107) solid;
-    text-align: center;
-    margin: 1% 10%;
     font-size: 50px;
-    width: 300px;
     height: 100px;
 }
 
 th {
     border: 5px rgb(107, 11, 107) solid;
-    margin: 1% 10%;
     font-size: 50px;
-    width: 300px;
-    height: 100px;
     color: darkred;
-    background: grey;
+    background: rgb(190, 183, 183);
+    height: 120px;
 }
 
 caption {
@@ -47,7 +42,7 @@ caption {
 }
 
 .noob {
-    color: lightskyblue;
+    color: teal;
 }
 
  @media (max-width: 500px) {

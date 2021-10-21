@@ -21,6 +21,7 @@ td {
     border: 3px rgb(107, 11, 107) solid;
     font-size: 50px;
     height: 100px;
+    text-align: center;
 }
 
 th {

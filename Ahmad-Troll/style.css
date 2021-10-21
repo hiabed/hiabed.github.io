@@ -26,22 +26,30 @@ td {
     height: 100px;
 }
 
+th {
+    border: 5px rgb(107, 11, 107) solid;
+    text-align: center;
+    margin: 1% 10%;
+    font-size: 50px;
+    width: 300px;
+    height: 100px;
+    color: darkred;
+    background: grey;
+}
+
 caption {
     font-size: 40px;
     background: lightgreen;
     color: darkmagenta;
 }
 
-thead {
-    color: darkred;
+.red {
+    color: red;
 }
- .red {
-     color: red;
- }
 
- .noob {
+.noob {
     color: lightskyblue;
- }
+}
 
  @media (max-width: 500px) {
     table {

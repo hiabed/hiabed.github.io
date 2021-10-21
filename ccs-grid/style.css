@@ -122,7 +122,6 @@ nav {
     background: rgb(245, 195, 177);
     grid-area: nav;
     border-radius: 10px;
-    position: fixed;
     padding: 1% 31% 1% 31%;
     width: 100%;
     border: 2px black solid;

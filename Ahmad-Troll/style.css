@@ -18,7 +18,7 @@ table {
 }
 
 td {
-    border: 5px rgb(107, 11, 107) solid;
+    border: 3px rgb(107, 11, 107) solid;
     text-align: center;
     margin: 1% 10%;
     font-size: 50px;
@@ -28,7 +28,6 @@ td {
 
 th {
     border: 5px rgb(107, 11, 107) solid;
-    text-align: center;
     margin: 1% 10%;
     font-size: 50px;
     width: 300px;

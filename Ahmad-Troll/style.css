@@ -5,14 +5,14 @@
 }
 
 body {
-    background: lightgrey;
+    background: rgb(248, 233, 233);
 }
 
 table {
     border: 3px solid black;
     padding: 2%;
     font-size: larger;
-    background: linear-gradient(lightgreen, rgb(255, 255, 213));
+    background: linear-gradient(rgb(174, 252, 174), rgb(255, 255, 213));
     border-radius: 10px;
     width: 100vw;
 }
@@ -42,3 +42,13 @@ thead {
  .noob {
     color: lightskyblue;
  }
+
+ /* @media {max-width: 500px;} {
+    table {
+        padding: 1%;
+        font-size: medium;
+        border-radius: 10px;
+        width: 200px;
+
+    }
+ } */

@@ -57,7 +57,7 @@ a {
 }
 
 #dev {
-    color: rgb(158, 154, 154);
+    color: rgb(241, 230, 230);
 }
 
 #welcome-section {
@@ -135,12 +135,17 @@ h2 {
     padding: 2% 0%;
 }
 
+h1#work {
+    color: white;
+
+}
+
 #work {
     margin-top: 4%;
     line-height: 2;
     font-size: 50px;
     margin-bottom: 1%;
-    color: rgb(205, 236, 205);
+    color: rgb(255, 255, 255);
 }
 
 footer {
@@ -237,7 +242,6 @@ div {
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 20%;
   }
   
   #myBtn:hover {

@@ -7,9 +7,8 @@
 
 body {
     font-family: sans-serif;
-    background-color: rgb(131, 99, 99);
     line-height: 1.6;
-    background: #b8adc4
+    background: #b8adc4;
 }
 
 li a {
@@ -92,9 +91,7 @@ a {
 }
 
 img {
-    width: 55vw;
     height: 65vh;
-    padding: auto;
     border-radius: 10px;
     width: 100%;
     object-fit: cover;
@@ -113,8 +110,6 @@ img {
     padding: 2%;
     border-style: solid;
 }
-
-
 #content3:hover {
     opacity: 0.8;
     padding: 2%;
@@ -124,15 +119,14 @@ img {
 #some {
     line-height: 5;
     text-align: center;
-    background-color: rgb(131, 99, 99);
     color: rgb(255, 250, 223);
-    background: linear-gradient(#6189b1 0%,#5b4d69 100%);
+    background: rgb(131, 99, 99) linear-gradient(#6189b1 0%,#5b4d69 100%);
     width: 100vw;
 }
 
 h2 {
     text-align: center;
-    padding: 2% 0%;
+    padding: 2% 0;
 }
 
 h1#work {
@@ -195,7 +189,7 @@ div {
     transform: rotate(30deg);
 }
 
-#profile-link:hover {
+.profile-link:hover {
     color: rgb(244, 255, 227);
 }
 
@@ -206,7 +200,7 @@ div {
     width: 6vw;
     padding: 10%;
 }
-  
+
 .fa-free-code-camp {
     background: black;
     color: white;
@@ -242,11 +236,11 @@ div {
     color: white;
     cursor: pointer;
     padding: 15px;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: #555;
-  }
+}
 
 @media (max-width: 1000px) {
     body {
@@ -264,47 +258,47 @@ div {
         width: 7vw;
         padding: 5%;
     }
-      
+
     .fa-free-code-camp {
         width: 7vw;
         padding: 3%;
     }
-    
+
 
 }
 
 @media (max-width: 700px) {
 
-#projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
 
-.fa-github {
-    width: 7vw;
-    padding: 5%;
-    font-size: large;
-}
-  
-.fa-free-code-camp {
-    width: 7vw;
-    padding: 3%;
-    font-size: large;
-}
+    .fa-github {
+        width: 7vw;
+        padding: 5%;
+        font-size: large;
+    }
 
-div {
-    font-size: 20px;
-}
+    .fa-free-code-camp {
+        width: 7vw;
+        padding: 3%;
+        font-size: large;
+    }
 
-#work {
-    font-size: 30px;
-}
+    div {
+        font-size: 20px;
+    }
 
-footer {
-    margin-top: 160%;
-}
+    #work {
+        font-size: 30px;
+    }
+
+    footer {
+        margin-top: 160%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -418,7 +412,7 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    
+
 }
 
 @media (max-width: 310px) {

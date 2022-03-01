@@ -190,6 +190,7 @@ button {
 */
 footer {
     display: flex;
+    flex-direction: row;
     background-color: gray;
 }
 

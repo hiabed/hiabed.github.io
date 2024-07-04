@@ -10,7 +10,7 @@ h1 {
 body {
     /* background-color: rgb(31, 34, 43); */
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(179,0,255,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 30%, rgba(119,0,255,1) 50%, rgba(29,0,39,1) 70%, rgba(9,9,121,1) 100%);
 
     color: black;
     font-family: sans-serif;

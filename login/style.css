@@ -1,3 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+.icon {
+    color: yellowgreen;
+    font-size: 50px;
+}
+
 body {
     background-color: rgb(31, 34, 43);
     color: black;
@@ -11,24 +20,22 @@ button {
 
 #one {
     /* margin: auto; */
-    padding-top: 60px;
-    box-shadow: 0px 0px 10px yellow;
+    padding: 60px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 175);
     background-color: rgb(224, 218, 218);
 }
 
 #two {
     box-shadow: 0px 0px 10px yellow;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #parent {
-    width: 80%;
-    height: 80%;
+    /* width: 80%; */
+    /* height: 80%; */
     margin: 5% auto 0px auto;
 }
 
-#image {
-    width: 982px;
-    height: 100%;
-    transform: translate(-252px, 0px);
+#no-account {
+    text-align: center;
 }

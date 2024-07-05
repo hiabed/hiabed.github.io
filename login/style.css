@@ -10,6 +10,7 @@ h1 {
 #un, #psw {
     color: white;
     background-color: rgb(35, 21, 70);
+    border: none;
 }
 
 ::placeholder {
@@ -29,9 +30,9 @@ body {
 }
 
 .login {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 22%, rgba(29,0,39,1) 66%, rgba(119,0,255,1) 100%, rgba(9,9,121,1) 100%);
-    border: 1px solid grey;
+    background: #0197d0;
+    /* background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(119,0,255,1) 0%, rgba(116,0,251,1) 0%, rgba(107,0,230,1) 0%, rgba(114,0,249,1) 0%, rgba(115,0,250,1) 0%, rgba(29,0,39,1) 50%, rgba(119,0,255,1) 100%, rgba(9,9,121,1) 100%, rgba(34,0,52,1) 100%); */
+    /* border: 1px solid grey; */
 }
 
 .intra {
@@ -39,8 +40,18 @@ body {
 }
 
 .login:hover, .intra:hover {
-    border: 1px solid black;
-    opacity: 80%;
+    /* border: 1px solid black; */
+    /* opacity: 80%; */
+    /* background: rgb(1,151,208); */
+    /* background: linear-gradient(90deg, rgba(1,151,208,1) 0%, rgba(56,54,136,1) 50%, rgba(1,151,208,1) 100%); */
+    color: white;
+    /* background: #0197d0;
+    box-shadow: 0px 0px 15px #0197d0; */
+}
+
+.login:hover {
+    background: #0197d0;
+    box-shadow: 0px 0px 10px #0197d0;
 }
 
 a {
@@ -64,3 +75,7 @@ a {
 #no-account {
     text-align: center;
 }
+
+/* input {
+    
+} */

@@ -72,6 +72,8 @@ a {
 
 #three {
     display: none;
+    box-shadow: 0px 0px 20px rgb(39, 37, 37);
+    padding: 40px;
 }
 
 #hand {

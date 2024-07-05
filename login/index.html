@@ -14,7 +14,8 @@
 <body>
     <div class="container" id="parent">
         <div class="row">
-            <!--First colomn-->
+
+                <!--First colomn-->
             <div class="col-sm-12 col-md-12 col-lg-6" id="one">
                 <h1 class="mb-3">Let's play <i class="fa-solid fa-table-tennis-paddle-ball icon"></i></h1> <!-- with logo in right -->
                 <div class="d-grid gap-2 mb-4">
@@ -23,22 +24,56 @@
                 <hr>
                 <p>Username:</p>
                 <div class="input-group mb-3">
-                    <span class="input-group-text input-group-left">@</span>
+                    <span class="input-group-text input-group-left"><i class="fa-regular fa-user"></i></span>
                     <input type="text" class="form-control form-control-lg" placeholder="Username" id="un">
                 </div>
                 <p>Password:</p>
                 <div class="input-group mb-4">
-                    <span class="input-group-text input-group-left">(*)</span>
+                    <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
                     <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
                 </div>
                 <div class="d-grid gap-2">
                     <button class="btn btn-success btn-lg mb-3 login">Log in</button>
                 </div>
-                <p id="no-account">Don't have an account? <a href="">Signup</a></p>
+                <p id="no-account">Don't have an account? <a id="signup" href="#">Signup</a></p>
             </div>
+
                     <!--Second colomn-->
             <div class="col-sm-12 col-md-12 col-lg-6"  id="two">
                 <img src="login-picture.png" alt="ping-pong image" id="image" class="img-fluid">
+            </div>
+
+                    <!--third colomn-->
+            <div class="col-lg-6"  id="three">
+                <h1 class="mb-3 " >join us! <i class="fa-regular fa-hand" id="hand"></i></h1> <!-- with logo in right -->
+                <div class="d-grid gap-2 mb-4">
+                    <button class="btn btn-secondary btn-lg intra">Signup with 42</button>
+                </div>
+                <hr>
+                <p>Email:</p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text input-group-left"><i class="fa-regular fa-envelope"></i></i></span>
+                    <input type="email" class="form-control form-control-lg" placeholder="Email" id="email">
+                </div>
+                <p>Username:</p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text input-group-left"><i class="fa-regular fa-user"></i></span>
+                    <input type="text" class="form-control form-control-lg" placeholder="Username" id="uname">
+                </div>
+                <p>Password:</p>
+                <div class="input-group mb-4">
+                    <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
+                </div>
+                <p>Re-type password:</p>
+                <div class="input-group mb-4">
+                    <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success btn-lg mb-3 login">Sign-up</button>
+                </div>
+                <p id="no-account">Already have an accout? <a id="signin" href="#">Signin</a></p>
             </div>
         </div>
     </div>

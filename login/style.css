@@ -90,6 +90,19 @@ a {
     100%{
         transform: rotate(42deg);  
 
+    }   
+}
+
+@media (max-width: 768px) {
+    /* Your CSS styles for phones */
+    #two {
+        display: none; /* Example adjustment for readability on tablets */
     }
-    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Your CSS styles for tablets */
+    #two {
+      display: none; /* Example adjustment for readability on tablets */
+    }
 }

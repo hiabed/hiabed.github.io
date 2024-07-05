@@ -4,6 +4,15 @@ const one = document.querySelector("#one");
 const two = document.querySelector("#two");
 const three = document.querySelector("#three");
 
+// console.log();
+function checkDevice()
+{
+    if (screen.width < 480 && screen.height < 960)
+    {
+        two.style.display = "none";
+    }
+}
+
 function singUp_function(event)
 {
     event.preventDefault();
@@ -20,3 +29,4 @@ function singIn_function(event)
 
 singUp.addEventListener("click", singUp_function);
 singIn.addEventListener("click", singIn_function);
+checkDevice();

@@ -59,18 +59,17 @@ a {
 
 #two {
     box-shadow: 0px 0px 20px rgb(39, 37, 37);
-    padding: 40px;
+    /* padding: 40px; */
 }
 
-/* to try later;
+#image {
+    height: 100%;
+}
 
-/* #parent {
-    padding: 5%;
-} */
-
-/* #row {
-    padding: 5%;
-} */
+#parent {
+    /* margin: 5% auto 0px auto; */
+    padding: 10%;
+}
 
 #no-account {
     text-align: center;

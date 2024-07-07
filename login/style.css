@@ -62,10 +62,15 @@ a {
     padding: 40px;
 }
 
-#parent {
-    /* margin: 5% auto 0px auto; */
-    padding: 10%;
-}
+/* to try later;
+
+/* #parent {
+    padding: 5%;
+} */
+
+/* #row {
+    padding: 5%;
+} */
 
 #no-account {
     text-align: center;

@@ -1,22 +1,13 @@
-const singUp = document.querySelector("#signup");
-const singIn = document.querySelector("#signin")
-const one = document.querySelector("#one");
-const two = document.querySelector("#two");
-const three = document.querySelector("#three");
+const link = document.querySelector("a");
 
-function singUp_function(event)
+function linkBehavior(event)
 {
     event.preventDefault();
-    one.style.display = "none";
-    three.style.display = "block";
+    link.style.backgroundColor = "#3f2455";
+    link.style.borderRadius = "10%";
+    link.style.boxShadow = "0px 0px 10px #9477fa"
+    link.style.paddingTop = "5px";
+    link.style.height = "50px";
 }
 
-function singIn_function(event)
-{
-    event.preventDefault();
-    three.style.display = "none";
-    one.style.display = "block";
-}
-
-singUp.addEventListener("click", singUp_function);
-singIn.addEventListener("click", singIn_function);
+link.addEventListener("click", linkBehavior);

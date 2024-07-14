@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    font-family: 'Games', sans-serif;
 }
 
 .icon {
@@ -14,7 +15,7 @@ h1 {
 }
 
 ::placeholder {
-    color: whitesmoke !important;
+    color: rgb(177, 177, 177) !important;
 }
 
 .input-group-left {
@@ -25,18 +26,21 @@ h1 {
 body {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 30%, rgba(119,0,255,1) 50%, rgba(29,0,39,1) 70%, rgba(9,9,121,1) 100%);
-    /* background-image: url("Untitled.png");
-    background-size: cover; */
     color: white;
-    font-family: sans-serif;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: bold;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .login {
     background: #0197d0 !important;
+    font-family: 'Games', sans-serif;
 }
 
 .intra {
     background-color: grey;
+    font-family: 'Games', sans-serif;
 }
 
 .login:hover, .intra:hover {
@@ -54,7 +58,7 @@ a {
 
 #one {
     box-shadow: 0px 0px 20px black;
-    padding: 60px;
+    padding: 140px 60px;
 }
 
 #two {
@@ -68,17 +72,22 @@ a {
 
 #parent {
     /* margin: 5% auto 0px auto; */
-    padding: 10%;
+    margin: 3% auto;
+    width: 70%;
+    height: 60%;
+    /* height: 100%; */
 }
 
 #no-account {
     text-align: center;
+    font-family: 'popins';
+    font-weight: lighter;
 }
 
 #three {
     display: none;
     box-shadow: 0px 0px 20px rgb(39, 37, 37);
-    padding: 40px;
+    padding: 60px;
 }
 
 #hand {
@@ -86,6 +95,9 @@ a {
     transform: rotate(42deg);  
     animation: fr 1s infinite;
 }
+
+
+
 @keyframes fr {
     0%{
         transform: rotate(42deg);  
@@ -101,9 +113,11 @@ a {
 }
 
 @media (max-width: 768px) {
-    /* Your CSS styles for phones */
     #two {
-        display: none; /* Example adjustment for readability on tablets */
+        display: none;
+    }
+    #parent {
+        width: 60%;
     }
 }
 
@@ -111,5 +125,8 @@ a {
     /* Your CSS styles for tablets */
     #two {
       display: none; /* Example adjustment for readability on tablets */
+    }
+    #parent {
+        width: 50%;
     }
 }

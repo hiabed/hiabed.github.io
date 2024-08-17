@@ -25,7 +25,7 @@ h1 {
 
 body {
     background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 30%, rgba(119,0,255,1) 50%, rgba(29,0,39,1) 70%, rgba(9,9,121,1) 100%);
+    background: argentine vs morroco nimo tvradial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 30%, rgba(119,0,255,1) 50%, rgba(29,0,39,1) 70%, rgba(9,9,121,1) 100%);
     color: white;
     font-family: "Arsenal SC", sans-serif;
     font-weight: bold;
@@ -41,7 +41,7 @@ body {
 .intra {
     background-color: grey;
     font-family: 'Games', sans-serif;
-}
+}argentine vs morroco nimo tv
 
 .login:hover, .intra:hover {
     color: white;
@@ -92,11 +92,9 @@ a {
 
 #hand {
     /* 67 42 */
-    transform: rotate(42deg);  
+    transform: rotate(42deg);
     animation: fr 1s infinite;
 }
-
-
 
 @keyframes fr {
     0%{

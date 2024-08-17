@@ -14,6 +14,7 @@ function singUp_function(event)
 function singIn_function(event)
 {
     event.preventDefault();
+    // add class so the transition can work probably;
     three.style.display = "none";
     one.style.display = "block";
 }

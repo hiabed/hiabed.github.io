@@ -1,127 +1,451 @@
+/* user-name (first last email) profile-pic score ranking Match history */
+/* fixed position in relation with the window */
+/* absolute position in relation with the first parent */
+/* relative position in relation with himself */
+/* sticky work when you scroll up to its position and keeps sticky in the place that you determine ... */
+/* z-index work with position (any kind of position) and the element with the biggest value will show up if its covered (-1 will be covered with all elements)*/
+/* !!! outline is the same as border but dont effect the with of the container and cant control every side of the outline/border */
+/* transparent for background "???"*/
+/* box-sizing to search when needed */
+/* declare a variable --variableName, and use the variable with var(variableName, fallbackValue) */
+/* filter property to look after (useful for hover effects and more) */
+/* pointer-events: none; (useful with javascript events) */
+/* content element to fill the content of the container */
+
+/* properies values can be inherited from their parents with "inherit" value*/
+
+/* Inheritable CSS Properties:
+Common CSS properties that are inheritable by default include:
+
+color
+font-family
+font-size
+font-style
+font-weight
+line-height
+text-align
+text-indent
+text-transform
+visibility */
+
+/* ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+} */
+
+/* Background of the scrollbar track */
+/* ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+} */
+
+/* Handle of the scrollbar */
+/* ::-webkit-scrollbar-thumb {
+    background: rgb(141, 84, 141);
+    border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: rgb(80, 55, 80);
+} */
+
+@media (min-width: 0px) and (max-width: 575px) {
+    /* Your CSS styles for Extra Small devices */
+    /* .link { */
+        /* background-color: #6d349c8a; */
+        /* border: none; */
+        /* box-shadow: 0px 0px 8px 2px #6d349c; */
+        /* margin: 0 auto; */
+        /* transition-duration: 0.5s;
+        height: 100% !important; */
+    /* } */
+    #main {
+        width: 277px;
+        margin: auto;
+        height: 50vh;
+    }
+    #profile-img {
+        width: 46px !important;
+        height: 46px !important;
+        top: 2% !important;
+    }
+    #profile-img > i {
+        font-size: 22px !important;
+        top: 10px !important;
+        left: 12px !important;
+    }
+    .btn:not(#play-block) {
+        height: 70%;
+    }
+    #design {
+        margin-top: 10px;
+        height: 40% !important;
+    }
+    #play-block {
+        display: none;
+    }
+    #main-img {
+      display: none;
+    }
+    #logout {
+        display: none;
+    }
+    .ll h3 {
+        display: none !important;
+    }
+    .btn i {
+        font-size: 3.5vw;
+        padding: auto;
+    }
+    #contain {
+        margin: 0 !important;
+        display: flex;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        gap: 1%;
+        position: relative;
+        bottom: 32px;
+    }
+    .navig {
+        width: 50px !important;
+        margin: 0 !important;
+        height: 100% !important;
+    }
+    /* .navig {
+        display: inline-block !important;
+        width: 50px !important;
+    } */
+    #icon {
+        position: relative;
+        top: 10px;
+        height: 60px !important;
+        width: 70px !important;
+        margin: 0 !important;
+        display: inline-block !important;
+    }
+    #icon > img {
+        height: 100% !important;
+        width: 100px !important;
+    }
+    #nav {
+        box-shadow: inset 0 0 2px 0px whitesmoke !important;
+        height: 8vh !important;
+    }
+    #description {
+        margin-top: 3% !important;
+    }
+    h1 {
+        font-size: 22px !important;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    #games {
+        height: 75% !important;
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    /* Your CSS styles for small devices */
+    /* #main {
+        width: 80%;
+        margin: auto;
+        height: 50vh;
+    } */
+    #main {
+        width: 293px;
+        margin: auto;
+        height: 50vh;
+    }
+    #description {
+        margin-top: 3% !important;
+        width: 100%;
+    }
+    #profile-img {
+        width: 46px !important;
+        height: 46px !important;
+        top: 2% !important;
+    }
+    #profile-img > i {
+        font-size: 22px !important;
+        top: 10px !important;
+        left: 12px !important;
+    }
+    .btn:not(#play-block) {
+        height: 70%;
+    }
+    #design {
+        margin-top: 10px;
+        height: 40% !important;
+    }
+    #play-block {
+        display: none;
+    }
+    #main-img {
+      display: none;
+    }
+    #logout {
+        display: none;
+    }
+    .ll h3 {
+        display: none !important;
+    }
+    .btn i {
+        font-size: 3.5vw;
+        padding: auto;
+    }
+    #contain {
+        margin: 0 !important;
+        display: flex;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        gap: 4%;
+        position: relative;
+        bottom: 32px;
+    }
+    .navig {
+        width: 50px !important;
+        margin: 0 !important;
+        height: 100% !important;
+    }
+    #icon {
+        position: relative;
+        top: 10px;
+        height: 60px !important;
+        width: 70px !important;
+        margin: 0 !important;
+        display: inline-block !important;
+    }
+    #icon > img {
+        height: 100% !important;
+        width: 100px !important;
+    }
+    #nav {
+        box-shadow: inset 0 0 2px 0px whitesmoke !important;
+        height: 8vh !important;
+    }
+    h1 {
+        font-size: 25px !important;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    #games {
+        height: 80% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Your CSS styles for medium devices */
+    #description {
+        width: 100%;
+        margin-top: 5%;
+    }
+    #main-img {
+        display: none; /* Example adjustment for readability on tablets */
+    }
+    #ping-pong, #XO {
+        margin-left: 0px;
+        height: 170px !important;
+        width: 250px !important;
+        margin-right: 4%;
+    }
+    /* .col-12#XO {
+        width: 100%;
+    } */
+    #play-block {
+        display: none;
+    }
+    #games {
+        position: relative;
+        bottom: 30%;
+        height: 30% !important;
+        width: fit-content;
+    }
+    #img1, #img2 {
+        position: relative;
+        right: 11px;
+        height: 100% !important;
+        width: 240px !important;
+        margin-bottom: 0 !important;
+        box-shadow: 0px 0px 10px 0px violet;
+        border-radius: 10%;
+    }
+    #main {
+        width: 72%;
+        margin: 3% auto;
+    }
+
+    .ll h3 {
+        display: none !important;
+    }
+    .btn i {
+        font-size: 3vw;
+    }
+    .ll {
+        text-align: center !important;
+    }
+    .navig {
+        width: 70% !important;
+    }
+    /* height: 100px;
+    width: 120px; */
+    #icon > img {
+        height: 80px !important;
+        width: 100px !important;
+        margin-bottom: 30% !important;
+    }
+    h1 {
+        font-size: 3.5vw;
+    }
+    /* #description p {
+        font-size: 15px !important;
+    } */
+}
+
+.btn i {
+    font-size: 20px;
+}
+
+#linkk {
+    font-size: 100px;
+}
+
+::selection { /* pseudo element */
+    background-color: rgb(136, 67, 136);
+    color: rgb(214, 214, 236);
+}
+
 body {
     margin: 0;
-    /* overflow: hidden; */
+    /* overflow: hidden; */ /* auto is better than scroll option, and there is x and y */
+    background-color: rgb(0, 21, 52);
 }
 
 #contain {   /* nav container */
-    margin-top: 15%;
+    margin-top: 30%;
     /* border: 3px solid yellow; */
 }
 
 i {
     color: whitesmoke;
-    font-size: 30px;
-    
-}
-
-i {
-    filter: drop-shadow(0px 5px 5px blueviolet);
+    /* font-size: 1.5vw; */
+    /* filter: drop-shadow(-4px 3px 5px blueviolet); */
 }
 
 h1 {
     font-family: 'Games', sans-serif;
-}
-
-#icon > h1 {      /* direct child */
-    margin: auto;
-}
-
-.navig > * {
-    margin: auto;
+    font-size: 32px;
 }
 
 #logout {
-    /* margin-top: 100%; */
-    /* border: 3px solid green; */
+    position: relative;
+    top: 33%;
+    margin: auto;
+    height: 70px;
+    width: 90%;
 }
 
 #nav {
-    background: rgb(46,61,128);
-    background: linear-gradient(99deg, rgba(46,61,128,1) 0%, rgba(41,13,68,1) 50%, rgba(46,61,128,1) 100%);
-    color: whitesmoke !important; /* highest priority */
-    /* box-shadow: 0px 0px 20px yellow; */
+    margin-top: 0;
+    background-color: rgb(10 19 57);
+    color: whitesmoke !important;
+    box-shadow: inset 0 0 3px 0px whitesmoke;
+    height: 100vh;
 }
 
-#nav, #main {
-    /* border: 3px solid orangered; */
-    height: 100vh;
-    color: rgb(75, 55, 48);
+#main {
+    min-height: 70vh;
+    padding-left: 4%;
+    padding-bottom: 2%;
+    background-color: rgb(0, 21, 52);
+    transition: all 1s;
+}
+
+#icon > img {
+    height: 100px;
+    width: 120px;
+    border: 2px solid #9477fa;      /* border can be modified in every side; */
+    box-shadow: 0px 0px 10px #9477fa;
+    border-radius: 50%;
+    margin: auto;
+    /* keep if good */
+    /* animation: logo 3s infinite;  */
 }
 
 #icon {
-    /* text-align: center; */
-    margin: auto;
-    height: 130px;
-    width: 200px;
-    /* border: 2px solid green; */
+    /* height: 15%; */
+    /* width: 80%; */
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .navig {
-    margin: auto;
-    /* text-align: center; */
-    height: 70px;
-    width: 200px;
-    /* border: 2px solid green; */
+    margin: 0 auto;
+    height: 50px;
+    width: 90%;
+    margin-bottom: 10%;
 }
 
 #design {
     height: 70%;
-    /* border: 3px solid rgb(158, 109, 158); */
-}
-
-#main {
-    background-color: rgb(55, 38, 71);
+    /* border: 3px solid yellow; */
 }
 
 #main-img {
-    width: 900px;
-    height: auto;
-    padding-top: 5%;
-    /* border: 2px solid red; */
-    /* min-width: 100%;
-    min-height: 100%; */
+    width: 35%;
+    height: 43%;
+    position: absolute;
+    bottom: 46%;
+    background-image: url(design4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: fr 3s infinite;
 }
 
-#ping-pong {
-    margin-top: 5%;
-    /* border: 4px solid rgb(0, 247, 255); */
-    /* background-color: aquamarine; */
-    /* width: 33%; */
-    height: 60%;
-    width: 15%;
-    margin-left: 0;
+@keyframes fr {
+    0% {
+        background-image: url("design4.png");
+    }
+    50% {
+        background-image: url("design3.png");
+    }
+    100% {
+        background-image: url("design4.png");
+    }
 }
 
-#XO {
-    margin-top: 5%;
-    /* width: 60%; */
-    /* border: 4px solid rgb(0, 255, 0); */
+#ping-pong, #XO {
     margin-left: 0;
-    height: 60%;
-    width: 15%;
-}
-
-#more {
-    /* background-color: blanchedalmond; */
-    color: whitesmoke;
-    margin-top: 5%;
-    /* width: 60%; */
-    /* border: 4px solid rgb(0, 255, 0); */
-    margin-left: 0;
-    height: 60%;
-    width: 30%;
-    /* font-size: small; */
+    height: 170px;
+    width: 300px;
 }
 
 #img1, #img2 {
-    height: 100%;
-    width: 100%;
-    /* border: 3px solid red; */
+    height: 170px;
+    width: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px violet;
+    border-radius: 10%;
 }
 
 #games {
     height: 30%;
-    /* border: 3px solid rgb(71, 4, 71); */
+}
+
+#games > h1 {
+    color: whitesmoke;
+    /* border-radius: 5px; */
+}
+
+p {
+    font-family: sans-serif;
 }
 
 #description {
@@ -130,26 +454,116 @@ h1 {
     margin-top: 8%;
 }
 
-#main-header {
-    font-size: 50px;
+#description p {
+    font-family: sans-serif;
+    color: rgb(207, 206, 206);
+    font-size: 15px;
 }
 
-p {
-    font-family: sans-serif;
+/* play Button */
+
+/* button {
+    border: none;
+} */
+
+#play-block {
+    position: relative;
+    top: 55px;
+    margin: 0;
+    max-width: 185px;
+    height: fit-content;
 }
+
+#play-button {
+    font-size: 20px;
+    background-color: #6d349cdb;
+    box-shadow: 0px 0px 10px violet;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 20px;
+    color: whitesmoke;
+    text-align: start;
+}
+
+#play-block button {
+    padding-left: 11%;
+}
+
+#play-icon {
+    font-size: 50px;
+    width: fit-content;
+    position: relative;
+    bottom: 46px;
+    left: 112px;
+    cursor: pointer;
+}
+
+/* end of button */
 
 span {
     color: blueviolet;
 }
 
-a {
+a , button {
     text-decoration: none;
     color: whitesmoke;
+    padding-top: 8px;
 }
 
-a:hover h3, a:hover h3 i {
-    color: blue; /* Change the color on hover */
+/* .btn {
+    background-color: #6d349c11;
+    border: none;
+} */
+
+.btn:not(.link):hover {
+    background-color: rgba(83, 83, 83, 0.473); /*hover effect for buttons without 'link' */
+    box-shadow: 0px 0px 8px 2px rgba(83, 83, 83, 0.473);
 }
 
+.btn .ll {
+    text-align: start;
+}
 
+.btn h3 {
+    font-size: 20px;
+}
 
+.btn {
+    color: whitesmoke;
+    border: none;
+}
+
+.link {
+    background-color: #6d349c8a;
+    border: none;
+    box-shadow: 0px 0px 8px 2px #6d349c;
+    margin: 0 auto;
+    transition-duration: 0.5s;
+    height: 100% !important;
+}
+
+.link:hover {
+    background-color: #6d349c8a;
+}
+
+.link > .ll {
+    text-align: center;
+}
+
+#profile-img {
+    border: 1px solid #9c949c;
+    box-shadow: 0px 0px 10px violet;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 1%;
+    right: 10px;
+}
+
+#profile-img > i {
+    position: relative;
+    left: 15px;
+    top: 11px;
+    font-size: 36px;
+}

@@ -1,0 +1,51 @@
+#chat-part {
+    display: none;
+    width: 80% !important;
+    max-width: 800px;
+    height: 60vh;
+    /* border: 3px solid purple; */
+    margin: auto;
+}
+
+#chat-part h2 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+#players, #chat-page{
+    border: 2px solid rgb(0, 255, 255);
+    height: 60vh;
+    border-radius: 5px;
+}
+
+#chat-page {
+    border-left: none;
+}
+
+#secondd, #firstt {
+    border: 2px solid rgb(0, 255, 255);
+    width: 90%;
+    height: 15%;
+    margin: 15px auto;
+}
+
+#firstt {
+    height: 10%;
+    width: 100%;
+}
+
+#messages {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    border: 2px solid aqua;
+}
+
+#insert-msg {
+    height: 80px;
+    width: 80%;
+    margin: auto;
+    border: 2px solid aqua;
+    position: relative;
+    bottom: 20%;
+}

@@ -1,0 +1,180 @@
+:root {
+    --uInfo_height: 20vh;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+    :root {
+        --uInfo_height: 40vh;
+    }
+    #user-info {
+        box-shadow: none !important;
+    }
+    #profile-part {
+        height: 100vh !important;
+        top: 70px !important;
+        width: 80vw !important;
+        min-width: 307px;
+    }
+    #first, #second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+    #user-picture {
+        width: 64px !important;
+        height: 64px !important;
+        bottom: 59px !important;
+    }
+    #leaderboard {
+        height: 191px;
+    }
+    #match-history {
+        height: 191px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    :root {
+        --uInfo_height: 32vh;
+    }
+    #profile-part {
+        height: 68vh !important;
+        top: 70px !important;
+        width: 80vw !important;
+    }
+    #first, #second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+    #user-picture {
+        width: 64px !important;
+        height: 64px !important;
+        bottom: 59px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --uInfo_height: 20vh;
+    }
+    #profile-part {
+        width: 80vw !important;
+    }
+}
+
+#profile-part {
+    display: none;
+    background-color: #7b45a645;
+    box-shadow: 0 0 10px #4fb0c6;
+    border-radius: 20px;
+    width: 740px;
+    height: 75vh;
+    margin: auto;
+    position: relative;
+    top: 46px;
+    background-image: url(/images/2.jpeg);
+    background-size: cover;
+}
+
+#profile-part #statistics {
+    /* border: 2px solid red; */
+    height: calc(100vh - var(--uInfo_height) - 25vh - 130px);
+}
+
+#statistics h1 {
+    text-align: center;
+    color: rgb(194, 223, 213);
+}
+
+#leaderboard {
+    border-top: 2px solid #9affec6b;
+    border-right: 2px solid #9affec6b;
+}
+
+#match-history {
+    border-top: 2px solid #9affec6b;
+}
+
+#user-info {
+    width: 90%;
+    height: var(--uInfo_height);
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px #8525888f;
+    position: relative;
+    bottom: 70px;
+    border-radius: 10px;
+}
+
+#user-info h1, #statistics h1 {
+    color: white !important;
+    /* text-align: center; */
+    font-size: 30px;
+}
+
+#user-info h2 {
+    color: aquamarine !important;
+    /* text-align: center; */
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+#user-info h4 {
+    /* color: rgb(194, 223, 213) !important;
+    text-align: center; */
+    font-size: 15px !important;
+    font-weight: bold;
+}
+
+#user-picture {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid #0dcaf0;
+    box-shadow: 0 0 10px #4fb0c6;
+    margin: 0 auto;
+    position: relative;
+    bottom: 70px;
+    background-image: url(/images/me.jpg);
+    background-size: contain;
+}
+
+/* #user-picture > i {
+    font-size: 64px;
+    position: absolute;
+    left: 32px;
+    top: 25px;
+    color: #c6e1dc;
+} */
+
+/* #first-empty {
+    height: 100%;
+} */
+
+.uInfo {
+    color: #c6e1dc;
+}
+
+#first {
+    width: 40%;
+    margin: 10px auto;
+}
+
+#second {
+    width: 30%;
+    margin: 10px auto;
+}
+
+
+
+/* #profile-part > h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+} */

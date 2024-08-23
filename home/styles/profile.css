@@ -28,9 +28,6 @@
         height: 64px !important;
         bottom: 59px !important;
     }
-    #leaderboard {
-        height: 191px;
-    }
     #match-history {
         height: 191px;
     }
@@ -74,7 +71,7 @@
     background-color: #7b45a645;
     box-shadow: 0 0 10px #4fb0c6;
     border-radius: 20px;
-    width: 740px;
+    width: 82vw;
     height: 75vh;
     margin: auto;
     position: relative;
@@ -83,39 +80,65 @@
     background-size: cover;
 }
 
-#profile-part #statistics {
-    /* border: 2px solid red; */
-    height: calc(100vh - var(--uInfo_height) - 25vh - 130px);
-}
-
 #statistics h1 {
     text-align: center;
     color: rgb(194, 223, 213);
 }
 
-#leaderboard {
-    border-top: 2px solid #9affec6b;
-    border-right: 2px solid #9affec6b;
+#user-info {
+    border-bottom: 2px solid white;
 }
 
 #match-history {
-    border-top: 2px solid #9affec6b;
-}
-
-#user-info {
-    width: 90%;
-    height: var(--uInfo_height);
-    margin: 0 auto;
-    /* box-shadow: 0px 0px 10px #8525888f; */
-    position: relative;
-    bottom: 70px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 #user-info h1, #statistics h1 {
     color: white !important;
-    /* text-align: center; */
     font-size: 30px;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+#profile-part #statistics {
+    /* border: 2px solid red; */
+    height: calc(100vh - var(--uInfo_height) - 27vh);
+    overflow-y: auto;
+}
+
+.game-record {
+    height: 100px;
+    width: 90%;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    box-shadow: 0 0 7px aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+#me, #enemy {
+    height: 64px;
+    width: 64px;
+    border: 2px solid aqua;
+    transform: rotate(45deg);
+}
+
+#vs i {
+    font-size: 30px;
+}
+
+#match {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
 }
 
 #user-info h2 {
@@ -128,21 +151,31 @@
 #user-info h4 {
     /* color: rgb(194, 223, 213) !important;
     text-align: center; */
-    font-size: 15px !important;
+    font-size: 13px !important;
     font-weight: bold;
+    margin-top: 7px;
 }
 
 #user-picture {
+    margin: auto;
+    position: relative;
+    bottom: 17%;
     width: 128px;
     height: 128px;
-    border-radius: 50%;
-    border: 2px solid #0dcaf0;
-    box-shadow: 0 0 10px #4fb0c6;
-    margin: 0 auto;
-    position: relative;
-    bottom: 70px;
     background-image: url(/images/me.jpg);
     background-size: contain;
+    clip-path: polygon(51% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+#us {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 5%;
+}
+
+#my-picture {
+    height: 128px;
 }
 
 /* #user-picture > i {
@@ -162,16 +195,28 @@
 }
 
 #first {
-    width: 40%;
-    margin: 10px auto;
+    /* width: 40%; */
+    /* background-color: #4fb0c6; */
+    /* margin: 10px auto; */
+    border-right: 2px solid white;
 }
 
 #second {
-    width: 30%;
-    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+    border-right: 2px solid white;
 }
 
+.progress {
+    width: 100%;
+}
 
+.progress-bar-animated {
+    background-color: #6d136d;
+}
 
 /* #profile-part > h2 {
     color: whitesmoke;

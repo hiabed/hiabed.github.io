@@ -24,8 +24,9 @@
     <div class="container-fluid">
         <div class="row">
             <!-- login part -->
-            <div class="row" id="parent" style="display: none;" > <!--  style="display: flex;" -->
+            <div class="row" id="login-parent" style="display: flex;" > <!--  style="display: flex;" -->
                 <div class="col-12 col-md-12 col-lg-6" id="one">
+                    <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken">
                     <h1 class="mb-3">Let's play <i class="fa-solid fa-table-tennis-paddle-ball icon"></i></h1> <!-- with logo in right -->
                     <div class="d-grid gap-2 mb-4">
                         <button class="btn btn-secondary btn-lg intra">Log in with 42</button>
@@ -39,10 +40,10 @@
                     <p>Password:</p>
                     <div class="input-group mb-4">
                         <span class="input-group-text input-group-left"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" class="form-control form-control-lg psw" placeholder="Password">
+                        <input type="password" class="form-control form-control-lg" placeholder="Password" id="psw">
                     </div>
                     <div class="d-grid gap-2">
-                        <button class="btn btn-success btn-lg mb-3 login">Log in</button>
+                        <button class="btn btn-success btn-lg mb-3 login-btn">Log in</button>
                     </div>
                     <p id="no-account">Don't have an account? <a id="signup" href="#">Sign up</a></p>
                 </div>
@@ -50,6 +51,7 @@
                     <img src="images/login-picture.png" alt="ping-pong image" id="image" class="img-fluid">
                 </div>
                 <div class="col-lg-6"  id="three">
+                    <!-- <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken"> -->
                     <h1 class="mb-3" >join us! <i class="fa-regular fa-hand" id="hand"></i></h1> <!-- with logo in right -->
                     <div class="d-grid gap-2 mb-4">
                         <button class="btn btn-secondary btn-lg intra">Sign up with 42</button>
@@ -76,13 +78,13 @@
                         <input type="password" class="form-control form-control-lg psw" placeholder="Password">
                     </div>
                     <div class="d-grid gap-2">
-                        <button class="btn btn-success btn-lg mb-3 login">Sign up</button>
+                        <button class="btn btn-success btn-lg mb-3 login-btn">Sign up</button>
                     </div>
                     <p id="no-account">Already have an accout? <a id="signin" href="#">Log in</a></p>
                 </div>
             </div>
             <!-- nav part -->
-            <div class="col-12 col-md-2" id="nav" style="display: block;" >
+            <div class="col-12 col-md-2" id="nav" style="display: none;" >
                 <div class="row" id="icon">
                     <img src="/images/logo.avif" alt="logo">
                 </div>
@@ -105,7 +107,7 @@
                 </div>
             </div>
             <!-- main part -->
-            <div class="col-md-10" id="main" style="display: block;" >
+            <div class="col-md-10" id="main" style="display: none;" >
                 <div class="row" id="design">
                     <div class="col-12 col-lg-5" id="description">
                         <h1 id="main-header">Play Online Games <br> With Your <span>Friends</span></h1>
@@ -132,42 +134,114 @@
             <!-- Profile part -->
             <div class="col-md-10" id="profile-part">
                 <div class="row">
-                    <div id="user-picture">
-                        <!-- <i class="fa-solid fa-user"></i> -->
-                    </div>
                     <div class="col-12">
                         <div class="row" id="user-info">
-                            <div class="col-12 col-md-6 uInfo" id="first">
-                                <h1 style="color: #6d349c;">User infos:</h1>
-                                <div id="empty">
-                                    <h2 style="display: inline-block;">username: </h2> <h4 style="display: inline-block;"> <span style="color: white;">mhassani</span></h4>
+                            <div class="col-12 col-md-2 uInfo" id="first">
+                                <div id="user-picture">
                                 </div>
-                                <div id="empty">
-                                    <h2 style="display: inline-block;">first-name: </h2> <h4 style="display: inline-block;"> <span style="color: white;">Mohammed-Abed</span></h4>
+                                <div id="us">
+                                    <h3 style="align-self: center;">mhassani</h3>
+                                    <h5 style="align-self: center;">2560</h5>
                                 </div>
-                                <div id="empty">
-                                    <h2 style="display: inline-block;">last-name: </h2> <h4 style="display: inline-block;"> <span style="color: white;">Hassani-Idrissi</span></h4>
-                                </div>
+                                <!-- <i class="fa-solid fa-user"></i> -->
                             </div>
                             <div class="col-12 col-md-6 uInfo" id="second">
-                                <h1 style="color: #6d349c;">Statistics:</h1>
-                                <div id="empty">
-                                    <h2 style="display: inline-block;">wins: </h2> <h4 style="display: inline-block;"> <span style="color: white;">42</span></h4>
+                                <div class="par" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                                    <h4>Level42</h4>
+                                    <h4>2542/3000</h4>
                                 </div>
-                                <div id="empty">
-                                    <h2 style="display: inline-block;">loses: </h2> <h4 style="display: inline-block;"> <span style="color: white;">42</span></h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div id="empty">
-                                    <h2 style="display: inline-block;">score: </h2> <h4 style="display: inline-block;"> <span style="color: white;">1042</span></h4>
+                                <div class="par" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                                    <h4>Max level</h4>
+                                    <h4>50</h4>
                                 </div>
+                            </div>
+                            <div class="col-12 col-md-4 uInfo" id="third">
+
                             </div>
                         </div>
                         <div class="row" id="statistics">
-                            <div class="col-12 col-sm-6" id="leaderboard">
-                                <h1>Leaderboard</h1>
-                            </div>
-                            <div class="col-12 col-sm-6" id="match-history">
+                            <div class="col-12" id="match-history">
                                 <h1>Match History</h1>
+                                <div class="game-record"> <!-- flex box -->
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">Won</h2>
+                                    <div id="match">
+                                        <div id="me"></div>
+                                        <div id="vs">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div id="enemy"></div>
+                                    </div>
+                                    <h2 id="score-pts">+30</h2>
+                                </div>
+                                <div class="game-record"> <!-- flex box -->
+                                    <h2 id="win-lost" style="color: red; text-decoration: line-through;">Lost</h2>
+                                    <div id="match">
+                                        <div id="me"></div>
+                                        <div id="vs">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div id="enemy"></div>
+                                    </div>
+                                    <h2 id="score-pts">-15</h2>
+                                </div>
+                                <div class="game-record"> <!-- flex box -->
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">win</h2>
+                                    <div id="match">
+                                        <div id="me"></div>
+                                        <div id="vs">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div id="enemy"></div>
+                                    </div>
+                                    <h2 id="score-pts">+30</h2>
+                                </div>
+                                <div class="game-record"> <!-- flex box -->
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">win</h2>
+                                    <div id="match">
+                                        <div id="me"></div>
+                                        <div id="vs">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div id="enemy"></div>
+                                    </div>
+                                    <h2 id="score-pts">+30</h2>
+                                </div>
+                                <div class="game-record"> <!-- flex box -->
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">win</h2>
+                                    <div id="match">
+                                        <div id="me"></div>
+                                        <div id="vs">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div id="enemy"></div>
+                                    </div>
+                                    <h2 id="score-pts">+30</h2>
+                                </div>
+                                <div class="game-record"> <!-- flex box -->
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">win</h2>
+                                    <div id="match">
+                                        <div id="me"></div>
+                                        <div id="vs">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div id="enemy"></div>
+                                    </div>
+                                    <h2 id="score-pts">+30</h2>
+                                </div>
+                                <div class="game-record"> <!-- flex box -->
+                                    <h2 id="win-lost" style="color: #78dc78; text-decoration: underline;">win</h2>
+                                    <div id="match">
+                                        <div id="me"></div>
+                                        <div id="vs">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div id="enemy"></div>
+                                    </div>
+                                    <h2 id="score-pts">+30</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -178,7 +252,7 @@
                 <div class="row">
                     <div class="col-4" id="players">
                         <div id="firstt">
-                            <h2>DM CHAT</h2>
+                            <h2>Messages</h2>
                         </div>
                         <div id="chats">
                             
@@ -191,6 +265,8 @@
                             <p>online</p>
                         </div>
                         <div id="messages">
+                            <div id="msgs">
+                            </div>
                         </div>
                         <div id="insert-msg">
                             <div class="input-group" id="input-group-chat">

@@ -13,41 +13,27 @@ links.forEach ((link)=> {
     })
 });
 
-const data_example = async() => {
-    try {
-        const data = await fetch("https://dattebayo-api.onrender.com/characters");
-        if (data.ok)
-        {
-            const json_data = await data.json();
-            return json_data.characters;
-        }
-    } catch (err) {
-        console.error(err);
-    }
-}
+const loginBtn = document.querySelector(".login-btn");
+const loginPart = document.querySelector("#login-parent");
+const navBar = document.querySelector("#nav");
+const mainPart = document.querySelector("#main");
+const profilePart = document.querySelector("#profile-part");
+const chatPart = document.querySelector("#chat-part");
+const setting = document.querySelector("#setting-part");
 
-const data_characters = async() => {
-    const characters = await data_example();
-    characters.forEach(character => {
-        const user = document.createElement("div");
-        document.querySelector("#chats").appendChild(user);
-        user.innerHTML = character.name;
-        // document.querySelector("#chats div").style.border = "none";
-        user.addEventListener("click", ()=> {
-            const users = document.querySelectorAll("#chats div");
-            users.forEach(userr => {
-                userr.style.width = "90%";
-                userr.style.boxShadow = "0 0 5px #0e2c2e";
-            })
-            user.style.width = "98%";
-            user.style.boxShadow = "0 0 5px #9bf9ff";
-            document.querySelector("#chat-pic").style.backgroundImage  = `url("${character.images[0]}")`;
-            document.querySelector("#secondd h3").innerHTML = character.name;
-        })
-    })
-}
+loginBtn.addEventListener("click", ()=> {
+    navBar.style.display = "block";
+    mainPart.style.display = "block";
+    loginPart.style.display = "none";
+})
 
-//  change when click on the user only.
+const logoutBtn = document.querySelector("#logout");
 
-data_characters();
-
+logoutBtn.addEventListener("click", ()=> {
+    setting.style.display = "none";
+    chatPart.style.display = "none";
+    profilePart.style.display = "none";
+    navBar.style.display = "none";
+    mainPart.style.display = "none";
+    loginPart.style.display = "flex";
+})

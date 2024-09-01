@@ -5,6 +5,8 @@ const chatFunction = () => {
     profileId.style.display = "none";
     main.style.display = "none";
     settingPage.style.display = "none";
+    rankPart.style.display = "none";
+    friendsPart.style.display = "none";
     chatPage.style.display = "block";
     // document.querySelector("#profile-img").style.display = "block";
 }
@@ -30,33 +32,44 @@ const scrollToBottom = ()=> {
     container.scrollTop = container.scrollHeight;
 }
 
-const data_characters = async() => {
+const data_characters = async () => {
     const characters = await data_example();
+    const chats1 = document.querySelector("#chats");
+    const chats2 = document.querySelector("#chats2");
+
     characters.forEach(character => {
         const user = document.createElement("div");
-        document.querySelector("#chats").appendChild(user);
+        const user2 = document.createElement("div");
+
         user.innerHTML = character.name;
-        // document.querySelector("#chats div").style.border = "none";
-        user.addEventListener("click", ()=> {
-            const users = document.querySelectorAll("#chats div");
+        user2.innerHTML = character.name;
+
+        chats1.appendChild(user);
+        chats2.appendChild(user2);
+
+        const handleUserClick = (userElement) => {
+            const users = document.querySelectorAll("#chats div, #chats2 div");
             users.forEach(userr => {
                 userr.classList.remove("selected-user");
                 userr.style.width = "90%";
                 userr.style.boxShadow = "0 0 5px #0e2c2e";
-            })
-            user.style.width = "95%";
-            user.style.boxShadow = "0 0 5px #9bf9ff";
-            user.classList.add("selected-user");
-            document.querySelector("#chat-pic").style.backgroundImage  = `url("${character.images[0]}")`;
+            });
+            userElement.style.width = "95%";
+            userElement.style.boxShadow = "0 0 5px #9bf9ff";
+            userElement.classList.add("selected-user");
+            document.querySelector("#chat-pic").style.backgroundImage = `url("${character.images[0]}")`;
             document.querySelector("#secondd h3").innerHTML = character.name;
-        })
-    })
-}
+        };
+
+        user.addEventListener("click", () => handleUserClick(user));
+        user2.addEventListener("click", () => handleUserClick(user2));
+    });
+};
 
 const sendMsg = document.querySelector("#something");
 
 const frontChat = (event)=> {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && sendMsg.value != "") {
         // console.log(sendMsg.value);
         if (sendMsg.value != "friend" && sendMsg.value != "alaykum salam") {
             const msg = document.createElement("div");
